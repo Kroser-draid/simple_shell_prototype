@@ -62,8 +62,8 @@ void _my_puts(char *str)
 		return;
 	while (str[i] != '\0')
 	{
-			_my_putchar(str[i]);
-			i++;
+		_my_putchar(str[i]);
+		i++;
 	}
 }
 
@@ -81,8 +81,8 @@ int _my_putchar(char c)
 
 		if (c == MY_BUF_FLUSH || i >= MY_WRITE_BUF_SIZE)
 		{
-				write(1, buf, i);
-				i = 0;
+			write(1, buf, i);
+			i = 0;
 		}
 		if (c != MY_BUF_FLUSH)
 			buf[i++] = c;
